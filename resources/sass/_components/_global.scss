@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Overlock:wght@400;700;900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;;
+    line-height: 1.5;
+    transition: all 0.5s ease;
+    background:#fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+    font-weight: 600;
+}
+h3 {
+    font-size: 2.25rem;
+}
+a:hover,
+a {
+    color: $darkBlack;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+.pa-t {
+    padding-top: 3rem;
+}
+.pa-b {
+    padding-bottom: 3rem;
+}
+.pa-tb {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.ma-t {
+    margin-top: 3rem;
+}
+.ma-b {
+    margin-bottom: 3rem;
+}
+.ma-tb {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
