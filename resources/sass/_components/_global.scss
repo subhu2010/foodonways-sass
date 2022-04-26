@@ -5,10 +5,10 @@ html {
     transition: all 0.5s ease;
 }
 body {
-    font-family: "Nunito Sans", sans-serif;;
+    font-family: "Nunito Sans", sans-serif;
     line-height: 1.5;
     transition: all 0.5s ease;
-    background:#fff;
+    background: $white;
 }
 h1,
 h2,
@@ -16,8 +16,10 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 1.5;
+    font-family: "Overlock", cursive;
+    line-height: 1.3;
     font-weight: 600;
+    margin-bottom: 0;
 }
 h3 {
     font-size: 2.25rem;
@@ -54,3 +56,176 @@ ul {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    h3 {
+        font-weight: 800;
+        text-transform: capitalize;
+        color: #000;
+        font-size: 1.5rem;
+    }
+}
+
+.see-btn {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.menu-section,
+.category-section {
+    background: $bg-color;
+}
+
+.price {
+    color: $green;
+    font-size: 1.125rem;
+    font-weight: 800;
+    display: block;
+}
+
+.selling-card-cart {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.125rem solid #efc4ef;
+    color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5625rem;
+    transition: all 0.5s ease;
+}
+
+.promotion-banner img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+/*menu card start*/
+.favourites-carousel {
+    .item {
+        padding: 0.625rem;
+    }
+}
+.menu-card-two {
+    background: $white;
+    display: flex;
+    box-shadow: 0.0625rem 0.0625rem 0.8125rem -0.125rem rgb(0 0 0 / 12%);
+    border-radius: 0.9375rem;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    .menu-card-img {
+        height: 9.375rem;
+        width: 9rem;
+        overflow: hidden;
+        flex: 1;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+    }
+    .menu-card-content {
+        padding: 0.625rem;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .menu-card-title {
+            color: $darkYellow;
+            text-transform: capitalize;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .menu-card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .menu-card-meta {
+            justify-content: space-between;
+            .selling-card-cart {
+                height: 1.875rem;
+                width: 1.875rem;
+                i {
+                    font-size: 1.375rem;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0.0625rem 0.0625rem 0.8125rem -0.125rem rgb(0 0 0 / 30%);
+        .menu-card-img img {
+            transform: scale(1.1);
+        }
+        .menu-card-content {
+            .menu-card-title {
+                color: $hoverColor;
+            }
+        }
+    }
+}
+/*menu card end*/
+
+// owl nav
+.favourites-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    button {
+        height: 2.1875rem;
+        width: 2.1875rem;
+        border-radius: 50% !important;
+        background: #efc4ef !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 !important;
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f30a";
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 900;
+            font-size: 1.75rem;
+            color: $green;
+            position: absolute;
+            top: 50%;
+            right: -0.3125rem;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            background: $darkYellow !important;
+            &::before {
+                color: $green !important;
+            }
+        }
+        &.owl-prev {
+            left: -2.8125rem;
+        }
+        &.owl-next {
+            right: -2.8125rem;
+            &::before {
+                transform: rotate(180deg) translateY(50%);
+                left: auto;
+                right: 1.0625rem;
+            }
+        }
+    }
+}
+
+

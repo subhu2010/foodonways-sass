@@ -1,6 +1,6 @@
-<!-- <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
+<a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
-<!-- <footer id="footer">
+<footer id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-3">
@@ -166,7 +166,7 @@
 			</div>
 		</div>
 	</div>
-</footer> -->
+</footer>
 
 <!-- START Bootstrap-Cookie-Alert -->
 <!-- <div class="alert text-center cookiealert" style="background:var(--secondary-color);" role="alert">

@@ -391,7 +391,7 @@ ul.top-menu {
         }
         > a {
             display: block;
-            vertical-align: middle;
+            // vertical-align: middle;
             padding: 0px 10px !important;
             text-decoration: none;
             font-size: 15px;
@@ -406,7 +406,9 @@ ul.top-menu {
     }
 }
 #header {
-    .headerSticky {
+    &.headerSticky {
+        transition: all .3s;
+        background: #fff;
         #bottom-menu {
             max-height: 0;
             height: 0;
@@ -528,6 +530,7 @@ ul.top-menu {
             }
             form {
                 .form-group {
+                    color:$white;
                     a,
                     label {
                         color: #fff;

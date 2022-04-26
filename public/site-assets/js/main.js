@@ -240,7 +240,7 @@ $('.special-food-carousel').owlCarousel({
 
 
 $('.menu-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     rewind:false,
     margin:30,
     nav:true,
