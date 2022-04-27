@@ -34,6 +34,110 @@
         </div>
     </div>
 
+    <!-- beverage menu section -->
+    <div class="beverage-section menu-section pa-tb my-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="section-title">
+                        <h3>Beverages</h3>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="default-btn text-end">
+                        <a href="#" class="btn see-btn">see all <i class="las la-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme menu-carousel">
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/1.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Top Picks</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/10.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Sizzler</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/4.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Chicken roast</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/5.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>French fries</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/6.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Mutton Roast</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/8.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Mutton Roast</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-card-one">
+                        <a href="#">
+                            <div class="menu-card-img">
+                                <img src="{{ asset('site-assets/images/menu/10.png') }}" class="" alt="food on ways">
+                            </div>
+                            <div class="menu-card-title">
+                                <h4>Sizzler</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- add section -->
     <div class="addvertise-section pa-tb">
         <div class="container">
