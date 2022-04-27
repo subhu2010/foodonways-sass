@@ -70,7 +70,7 @@
     left: -7px;
     top: -10px;
     background-color: #fff;
-    border: 5px solid var(--primary-color);
+    border: 5px solid red;
 }
 
 .noUi-background {
@@ -78,7 +78,7 @@
 }
 
 .noUi-connect {
-    background: var(--primary-color);
+    background: red;
     -webkit-transition: background 450ms;
     transition: background 450ms;
 }
@@ -108,7 +108,7 @@
 }
 
 .noUi-handle:active {
-    border: 8px solid var(--primary-color);
+    border: 8px solid red;
     border: 8px solid rgba(53, 93, 187, 0.38);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;

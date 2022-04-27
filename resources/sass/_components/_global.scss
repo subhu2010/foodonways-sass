@@ -79,6 +79,32 @@ ul {
     font-weight: 700;
 }
 
+.pagination {
+    .page-item {
+        &.active {
+            .page-link {
+                background: $hoverColor;
+                color: $white;
+                border-radius: 0.3125rem;
+                border: none;
+            }
+        }
+    }
+}
+
+.btn-one {
+    background: $darkYellow;
+    border: .0625rem solid $darkYellow;
+    padding: .625rem 1.875rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+.btn-one:hover {
+    color: #fff;
+    border-color: $hoverColor;
+    background: $hoverColor;
+}
+
 .menu-section,
 .category-section {
     background: $bg-color;
@@ -227,5 +253,3 @@ ul {
         }
     }
 }
-
-
