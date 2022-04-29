@@ -1,7 +1,22 @@
+// .fix-show {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     .home-banner {
+//         flex: 1;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     .fix-menu {
+//         flex: 1;
+//     }
+// }
+
 .home-banner-img {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    position:relative;
     img {
         height: 100%;
         width: 100%;
@@ -11,6 +26,13 @@
         text-align: left;
         left: 8%;
         width: 50%;
+    }
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
     }
 }
 

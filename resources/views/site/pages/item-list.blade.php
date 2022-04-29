@@ -21,7 +21,7 @@
 
 <section class="product-section-list pt-5">
     <div class="container">
-        <button class="btn sticky-filter-btn" onclick="openFiler()">
+        <button class="btn sticky-filter-btn" onclick="openListSidebar()">
             <img src="{{ asset('site-assets/images/menu/filter-menu.svg') }}">
         </button>
         <div class="row">
@@ -60,7 +60,7 @@
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
                                 <span class="item-card-price">Rs. 1010</span>
-                                <a href="#" class="btn btn-wrap mt-3">
+                                <a href="javascript:void(0)" class="btn btn-wrap mt-3" onclick="openCartSidebar()">
                                     <span>add to cart</span>
                                 </a>
                             </div>
@@ -235,7 +235,11 @@
 
 
 <script>
-function openFiler() {
+function openCartSidebar() {
+    document.getElementById("mb-view").style.width = "100%";
+}
+
+function openListSidebar() {
     document.getElementById("mb-view").style.width = "100%";
 }
 
@@ -254,6 +258,8 @@ $(window).resize(function() {
     }
 });
 </script>
+
+
 
 <script>
 // filter
@@ -295,9 +301,9 @@ lowerSlider.oninput = function() {
 </script>
 
 <script type="text/javascript">
-    function showRange(event){
-        console.log(event.target.value);
-    }
+function showRange(event) {
+    console.log(event.target.value);
+}
 </script>
 
 @endsection
