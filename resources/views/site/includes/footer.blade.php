@@ -178,12 +178,11 @@
 </div> -->
 <!-- END Bootstrap-Cookie-Alert -->
 
+<script type="text/javascript" src="{{ asset('site-assets/xzoom/xzoom.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('site-assets/xzoom/setup.js') }}"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<script src="{{ asset('site-assets/xzoom/foundation.min.js') }}"></script>
-<script src="{{ asset('site-assets/xzoom/setup.js') }}"></script>
 
 <!-- owl carousel -->
 <script src="{{ asset('site-assets/owl/jquery.min.js') }}"></script>
@@ -197,13 +196,6 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 
 </body>
 
-<!-- Only for the demo -->
-<script>
-    for (var i = 1; i <= 150; i++)
-        document.querySelector("#fillme").innerHTML += "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
-</script>
 
-<!-- Include cookiealert script -->
-<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
 </html>

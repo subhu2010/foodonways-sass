@@ -21,12 +21,13 @@
 
 <section class="product-section-list pt-5">
     <div class="container">
-        <button class="btn sticky-filter-btn" onclick="openListSidebar()">
+        <button class="btn sticky-filter-btn" onclick="openFiler()">
             <img src="{{ asset('site-assets/images/menu/filter-menu.svg') }}">
         </button>
         <div class="row">
             <div class="col-lg-3 col-md-12 col-md-4">
                 @include('site.includes.list-sidebar')
+                @include('site.includes.addcart-sidebar')
             </div>
             <div class="col-lg-9 col-md-12 col-md-8">
                 <div class="sorting-order clearfix">
@@ -55,14 +56,15 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
                                 <span class="item-card-price">Rs. 1010</span>
-                                <a href="javascript:void(0)" class="btn btn-wrap mt-3" onclick="openCartSidebar()">
+                                
+                                <button class="btn btn-wrap mt-3" onclick="opencart()">
                                     <span>add to cart</span>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -74,7 +76,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -93,7 +95,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -112,7 +114,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -131,7 +133,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -150,7 +152,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -169,7 +171,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -188,7 +190,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -207,7 +209,7 @@
                                 </a>
                             </div>
                             <div class="item-card-desc">
-                                <a href="#">
+                                <a href="{{url('item-detail')}}">
                                     <h2 class="item-card-title" title="Food on Ways Restro">Food on Ways Restro</h2>
                                 </a>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
@@ -234,76 +236,6 @@
 </section>
 
 
-<script>
-function openCartSidebar() {
-    document.getElementById("mb-view").style.width = "100%";
-}
 
-function openListSidebar() {
-    document.getElementById("mb-view").style.width = "100%";
-}
-
-function closeFiler() {
-    document.getElementById("mb-view").style.width = "0";
-}
-
-$(window).resize(function() {
-    if ($(window).width() > 1024) {
-        document.getElementById("mb-view").style.width = "100%";
-    }
-});
-$(window).resize(function() {
-    if ($(window).width() < 1023) {
-        document.getElementById("mb-view").style.width = "0";
-    }
-});
-</script>
-
-
-
-<script>
-// filter
-
-//  
-var lowerSlider = document.querySelector('#lower');
-var upperSlider = document.querySelector('#upper');
-
-document.querySelector('#two').value = upperSlider.value;
-document.querySelector('#one').value = lowerSlider.value;
-
-var lowerVal = parseInt(lowerSlider.value);
-var upperVal = parseInt(upperSlider.value);
-
-upperSlider.oninput = function() {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
-
-    if (upperVal < lowerVal + 4) {
-        lowerSlider.value = upperVal - 4;
-        if (lowerVal == lowerSlider.min) {
-            upperSlider.value = 4;
-        }
-    }
-    document.querySelector('#two').value = this.value
-};
-
-lowerSlider.oninput = function() {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
-    if (lowerVal > upperVal - 4) {
-        upperSlider.value = lowerVal + 4;
-        if (upperVal == upperSlider.max) {
-            lowerSlider.value = parseInt(upperSlider.max) - 4;
-        }
-    }
-    document.querySelector('#one').value = this.value
-};
-</script>
-
-<script type="text/javascript">
-function showRange(event) {
-    console.log(event.target.value);
-}
-</script>
 
 @endsection
