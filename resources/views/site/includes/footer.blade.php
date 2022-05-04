@@ -10,22 +10,28 @@
 					</div>
 					<ul class="footer-list">
 						<li>
-							<a href="#">Our history</a>
+							<a href="javascript:void(0)">Our history</a>
 						</li>
 						<li>
-							<a href="#">Leadership Team</a>
+							<a href="javascript:void(0)">Join Us</a>
 						</li>
 						<li>
-							<a href="#">Values in action</a>
+							<a href="javascript:void(0)">Our Team</a>
 						</li>
 						<li>
-							<a href="#">franchise action</a>
+							<a href="javascript:void(0)">Our Strength</a>
 						</li>
 						<li>
-							<a href="#">news & notification</a>
+							<a href="javascript:void(0)">Blog</a>
 						</li>
 						<li>
-							<a href="#">careers</a>
+							<a href="javascript:void(0)">Corporate Order</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Bulk/Party Order</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Diet Plan</a>
 						</li>
 					</ul>
 				</div>
@@ -33,23 +39,26 @@
 			<div class="col-lg-3 col-md-3">
 				<div class="footer-widget footer-account">
 					<div class="footer-title">
-						<h4>services</h4>
+						<h4>Useful Links</h4>
 					</div>
 					<ul class="footer-list">
 						<li>
-							<a href="#">gift card</a>
+							<a href="javascript:void(0)">Refund Policy</a>
 						</li>
 						<li>
-							<a href="#">mobile order & pay</a>
+							<a href="javascript:void(0)">Cancelation Policy</a>
 						</li>
 						<li>
-							<a href="">trending now</a>
+							<a href="javascript:void(0)">Payments & Security</a>
 						</li>
 						<li>
-							<a href="#">playPlaces & parties</a>
+							<a href="javascript:void(0)">Privacy Policy</a>
 						</li>
 						<li>
-							<a href="#">family fun hub</a>
+							<a href="javascript:void(0)">Terms & Conditions</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Offers</a>
 						</li>
 					</ul>
 				</div>
@@ -57,17 +66,23 @@
 			<div class="col-lg-3 col-md-3">
 				<div class="footer-widget footer-about">
 					<div class="footer-title">
-						<h4>careers</h4>
+						<h4>Help & Support</h4>
 					</div>
 					<ul class="footer-list">
 						<li>
-							<a href="">itilian chef</a>
+							<a href="javascript:void(0)">FAQ</a>
 						</li>
 						<li>
-							<a href="">manager</a>
+							<a href="javascript:void(0)">Customer Service</a>
 						</li>
 						<li>
-							<a href="">delivery boy</a>
+							<a href="javascript:void(0)">Customer Reviews</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">My Wishlist</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -79,13 +94,13 @@
 					</div>
 					<ul class="footer-list">
 						<li>
-							<a href="#">frequently asked question's</a>
+							<a href="javascript:void(0)">frequently asked question's</a>
 						</li>
 						<li>
-							<a href="#">donations</a>
+							<a href="javascript:void(0)">donations</a>
 						</li>
 						<li>
-							<a href="#">feedbacks</a>
+							<a href="javascript:void(0)">feedbacks</a>
 						</li>
 						<li>
 							<a href="privacy.php">terms & policy</a>
@@ -123,12 +138,12 @@
 				<div class="col-sm-6">
 					<div class="mobile-content text-sm-end">
 						<span>
-							<a href="#" target="_blank">
+							<a href="javascript:void(0)" target="_blank">
 								<img src="{{ asset('site-assets/images/google-play.svg') }}" class="img-fluid" alt="food on ways">
 							</a>
 						</span>
 						<span>
-							<a href="#" target="_blank">
+							<a href="javascript:void(0)" target="_blank">
 								<img src="{{ asset('site-assets/images/appstore.svg') }}" class="img-fluid" alt="food on ways">
 							</a>
 						</span>
@@ -170,7 +185,7 @@
 
 <!-- START Bootstrap-Cookie-Alert -->
 <!-- <div class="alert text-center cookiealert" style="background:var(--secondary-color);" role="alert">
-	<b>Do you like cookies?</b> &#x1F36A; We use third-party cookies to enhance your experience on this website. <a href="#" target="_blank" style="color:#fff">Learn more</a>
+	<b>Do you like cookies?</b> &#x1F36A; We use third-party cookies to enhance your experience on this website. <a href="javascript:void(0)" target="_blank" style="color:#fff">Learn more</a>
 
 	<button type="button" class="btn btn-light btn-sm acceptcookies">
 		I agree

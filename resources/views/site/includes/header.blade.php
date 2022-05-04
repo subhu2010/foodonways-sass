@@ -61,9 +61,9 @@
                 <div class="header-top clearfix">
                     <div class="top-left-menu d-none d-md-block">
                         <ul class="top-menu">
-                            <li>
+                            <!-- <li>
                                 <a href="{{url('/')}}">home</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="{{url('item-list')}}">foods</a>
                             </li>
@@ -85,9 +85,9 @@
                             <li>
                                 <a href="{{url('item-list')}}">health diets</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">Contact</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

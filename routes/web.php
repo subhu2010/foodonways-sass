@@ -25,7 +25,10 @@ Route::get('item-detail', function () {
     return view('site.pages.items-detail');
 });
 
-
 Route::get('checkout-order', function () {
     return view('site.pages.checkout-order');
+});
+
+Route::get('checkout-confirm', function () {
+    return view('site.pages.checkout-confirm');
 });

@@ -11,7 +11,7 @@
 }
 #header-top {
     background: #000;
-    margin-top: 20px;
+    margin-top: 0.625rem;
 }
 .top-left-menu {
     float: left;
@@ -21,8 +21,8 @@
 }
 .header-top {
     position: relative;
-    height: 60px;
-    line-height: 60px;
+    height: 3.75rem;
+    line-height: 3.75rem;
     ul li {
         display: inline-block;
         a {
@@ -34,10 +34,10 @@ ul.top-menu {
     > li {
         > a {
             display: block;
-            height: 60px;
-            line-height: 60px;
-            font-size: 14px;
-            padding: 0 10px;
+            height: 3.75rem;
+            line-height: 3.75rem;
+            font-size: 0.875rem;
+            padding: 0 0.625rem;
             text-decoration: none;
             white-space: nowrap;
             color: #fff;
@@ -114,7 +114,7 @@ ul.top-menu {
         }
         &::after {
             left: auto;
-            right: -10px;
+            right: -0.625rem;
             border-color: transparent transparent #f7d031 #f7d031;
         }
     }
@@ -123,20 +123,20 @@ ul.top-menu {
 .headerSticky {
     #logo {
         img {
-            height: 70px;
+            height: 4.375rem;
         }
     }
     .header-middle {
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 }
 
 .headerSticky .header-middle {
-    margin-top: 20px;
+    margin-top: 0.9375rem;
 }
 
 .header-middle {
-    margin-top: 30px;
+    margin-top: 0.9375rem;
     position: relative;
     .header-middle-cart,
     .header-middle-message {
@@ -334,8 +334,8 @@ ul.top-menu {
 }
 
 #bottom-menu {
-    margin-top: 30px;
-    height: 64px;
+    margin-top: 0.9375rem;
+    height: 4rem;
     transition: all 0.5s ease;
 }
 .bottom-menu-nav {
@@ -347,6 +347,25 @@ ul.top-menu {
     text-align: center;
     position: relative;
     transition: all 0.3s ease-in-out 0s;
+    &::before,
+    &::after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 1.25rem;
+        left: 1.25rem;
+        width: 50%;
+        top: 2.5rem;
+        max-width: 25rem;
+        background: 0 0;
+        box-shadow: 0 .9375rem .8125rem #333333;
+        transform: rotate(-2deg);
+    }
+    &::after {
+        transform: rotate(2deg);
+        right: 20px;
+        left: auto;
+    }
     > li {
         display: inline-block;
         list-style: none;
@@ -402,12 +421,13 @@ ul.top-menu {
             line-height: 64px;
             text-transform: capitalize;
             transition: all 0.3s ease 0s;
+            font-weight: 700;
         }
     }
 }
 #header {
     &.headerSticky {
-        transition: all .3s;
+        transition: all 0.3s;
         background: #fff;
         #bottom-menu {
             max-height: 0;
@@ -530,7 +550,7 @@ ul.top-menu {
             }
             form {
                 .form-group {
-                    color:$white;
+                    color: $white;
                     a,
                     label {
                         color: #fff;
