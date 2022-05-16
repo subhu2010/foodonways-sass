@@ -21,6 +21,10 @@ Route::get('item-list', function () {
     return view('site.pages.item-list');
 });
 
+Route::get('old-item-list', function () {
+    return view('site.pages.old-item-list');
+});
+
 Route::get('item-detail', function () {
     return view('site.pages.items-detail');
 });

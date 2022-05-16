@@ -14,12 +14,13 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link login-btn" id="pills-home-register-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home-register" type="button" role="tab" aria-controls="pills-home-register"
-                        aria-selected="false">Register</button>
+                        data-bs-target="#pills-home-register" type="button" role="tab"
+                        aria-controls="pills-home-register" aria-selected="false">Register</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home-login" role="tabpanel" aria-labelledby="pills-home-login-tab">
+                <div class="tab-pane fade show active" id="pills-home-login" role="tabpanel"
+                    aria-labelledby="pills-home-login-tab">
                     <form>
                         <div class="form-group mb-4">
                             <label>USERNAME OR EMAIL ADDRESS *</label>
@@ -43,7 +44,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="tab-pane fade" id="pills-home-register" role="tabpanel" aria-labelledby="pills-home-register-tab">
+                <div class="tab-pane fade" id="pills-home-register" role="tabpanel"
+                    aria-labelledby="pills-home-register-tab">
                     <form>
                         <div class="form-group mb-4">
                             <label>USERNAME OR EMAIL ADDRESS *</label>
@@ -71,6 +73,12 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="cart-icon">
+        <a href="#">
+            <i class="lar la-heart"></i>
+            <span class="count">0</span>
+        </a>
     </div>
     <div class="cart-icon">
         <a href="#">

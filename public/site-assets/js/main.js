@@ -368,3 +368,36 @@ $('.favourites-carousel').owlCarousel({
     }
 }
 })
+
+
+
+$('.list-category-slider').owlCarousel({
+    loop:true,
+    rewind:false,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:15000,
+    responsiveClass:true,
+    responsive:{
+       0:{
+        items:1,
+    },
+    480:{
+        items:1,
+    },
+    768:{
+        items:2,
+    },
+    1024:{
+        items:3,
+    },
+    1380:{
+        items:3,
+    },
+    1580:{
+        items:3,
+    }
+}
+})
