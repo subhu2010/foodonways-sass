@@ -95,7 +95,7 @@
     transition: all 0.5s ease;
     overflow: hidden;
     .menu-card-img {
-        height: 9.375rem;
+        min-height: 11rem;
         width: 9rem;
         overflow: hidden;
         flex: 1;
@@ -114,6 +114,7 @@
         justify-content: space-between;
         .menu-card-title {
             color: $darkYellow;
+            font-weight: 800;
             text-transform: capitalize;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -125,16 +126,10 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            margin: .625rem 0 !important;
         }
         .menu-card-meta {
             justify-content: space-between;
-            .selling-card-cart {
-                height: 1.875rem;
-                width: 1.875rem;
-                i {
-                    font-size: 1.375rem;
-                }
-            }
         }
     }
     &:hover {
@@ -2165,9 +2160,6 @@
 }
 
 /*checkout end*/
-
-
-
 
 .overlay-side {
     position: fixed;

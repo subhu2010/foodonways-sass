@@ -110,10 +110,11 @@ ul {
 
 .btn-one {
     background: $darkYellow;
-    border: .0625rem solid $darkYellow;
-    padding: .625rem 1.875rem;
+    border: 0.0625rem solid $darkYellow;
+    padding: 0.625rem 1.875rem;
     text-transform: capitalize;
     color: #fff;
+    font-weight: 700;
 }
 .btn-one:hover {
     color: #fff;
@@ -131,36 +132,36 @@ ul {
     display: block;
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 700;
     color: #000;
     text-transform: capitalize;
     user-select: none;
     &:last-child {
         margin-bottom: 0;
-    }   
+    }
     .checkmark {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        height: .9375rem;
-        width: .9375rem;
+        height: 0.9375rem;
+        width: 0.9375rem;
         background-color: $darkYellow;
-        border: .0625rem solid $darkYellow;
+        border: 0.0625rem solid $darkYellow;
         &::after {
             content: "";
             position: absolute;
             display: none;
             left: 50%;
             top: 50%;
-            width: .3125rem;
-            height: .625rem;
+            width: 0.3125rem;
+            height: 0.625rem;
             border: solid #fff;
-            border-width: 0 .1875rem .1875rem 0;
-            transform: translate(-50%,-50%) rotate(45deg);
+            border-width: 0 0.1875rem 0.1875rem 0;
+            transform: translate(-50%, -50%) rotate(45deg);
         }
     }
     input {
@@ -190,16 +191,18 @@ ul {
 }
 
 .selling-card-cart {
-    height: 2.5rem;
-    width: 2.5rem;
-    border: 0.125rem solid #efc4ef;
-    color: $green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.5625rem;
-    transition: all 0.5s ease;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: 2px solid $hoverColor;
+    width: 100px;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $hoverColor;
+    &:hover {
+        background-color: $hoverColor;
+        color: $white;
+    }
 }
 
 .promotion-banner img {
@@ -239,6 +242,37 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+        .menu-card-label {
+            position: absolute;
+            top: 0.625rem;
+            right: 0.625rem;
+            height: .9375rem;
+            width: .9375rem;
+            border: 1px solid $hoverColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                height: .625rem;
+                width: .625rem;
+                border-radius: 50%;
+                background-color: $hoverColor;
+                display: block;
+            }
+            &.veg-label {
+                border: 1px solid green;
+                span {
+                    background-color: green;
+                }
+            }
+            &.non-label {
+                border: 1px solid #512314;
+                span {
+                    background-color: #512314;
+                }
+            }
+        }
         .menu-card-title {
             color: $darkYellow;
             text-transform: capitalize;
@@ -255,13 +289,6 @@ ul {
         }
         .menu-card-meta {
             justify-content: space-between;
-            .selling-card-cart {
-                height: 1.875rem;
-                width: 1.875rem;
-                i {
-                    font-size: 1.375rem;
-                }
-            }
         }
     }
     &:hover {
@@ -388,6 +415,237 @@ ul {
                 border-radius: 0 0.125rem 0.125rem 0;
                 &:hover {
                     color: $darkYellow;
+                }
+            }
+        }
+    }
+}
+
+.sticky-icon {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -7.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12.5rem;
+    z-index: 2;
+    .sticky-social-icon {
+        padding-left: 2.5rem;
+        li {
+            list-style-type: none;
+            color: #efefef;
+            height: 2.6875rem;
+            background: #fff;
+            padding: 0px;
+            padding-left: 0.25rem;
+            margin-bottom: 0.625rem;
+            border-radius: 3.125rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 0 0.625rem 1.875rem rgb(0 0 0 / 13%);
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 0.3125rem;
+                color: $hoverColor;
+                i {
+                    font-size: 1.375rem;
+                }
+                p {
+                    padding-left: 0.625rem;
+                    margin: 0px;
+                    text-transform: uppercase;
+                    line-height: 2.6875rem;
+                    font-size: 0.875rem;
+                    color: $hoverColor;
+                }
+            }
+            &:hover {
+                margin-left: -6.25rem;
+            }
+        }
+    }
+}
+
+.toogle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .label {
+        color: $white;
+        display: block;
+        height: 3.75rem;
+        line-height: 3.75rem;
+        font-size: 0.875rem;
+        padding: 0 0.625rem;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .switch {
+        display: inline-block;
+        width: 2.5rem;
+        height: 1.25rem;
+        margin: 0.25rem;
+        position: relative;
+        input {
+            display: none;
+            &:checked {
+                + .slider {
+                    box-shadow: 0 0 0 2px $darkYellow, 0 0 4px $darkYellow;
+                    background: $darkYellow;
+                    &::before {
+                        transform: translateX(0.9375rem);
+                    }
+                }
+            }
+        }
+        .slider {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 1.875rem;
+            background: $hoverColor;
+            box-shadow: 0 0 0 2px $hoverColor, 0 0 4px $hoverColor;
+            cursor: pointer;
+            border: 4px solid transparent;
+            overflow: hidden;
+            transition: 0.2s;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 100%;
+                background-color: #fff;
+                border-radius: 1.875rem;
+                // transform: translateX(-30px);
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+.location-input {
+    padding-left: 0.625rem;
+    position: relative;
+    .form-control {
+        border-radius: 6.25rem !important;
+        background-color: $white;
+        border: none;
+        font-size: 0.8125rem;
+        padding-left: 1.5625rem;
+        font-weight: 600;
+    }
+    i {
+        position: absolute;
+        top: 50%;
+        left: 0.9375rem;
+        transform: translateY(-50%);
+    }
+}
+
+.addon-modal {
+    .modal-content {
+        padding: 2.5rem;
+        .surprise-food-cart {
+            border-bottom: 1px solid #98ce56;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            img {
+                height: 150px;
+                width: auto;
+                object-fit: contain;
+            }
+            .surprise-food-title {
+                h4 {
+                    color: $hoverColor;
+                }
+            }
+        }
+        .special-list-item {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgb(0 0 0 / 7%);
+            margin-top: 15px;
+            .form-check {
+                position: relative;
+                padding-left: 0;
+                .radio-label {
+                    padding-left: 0;
+                    font-weight: 700;
+                }
+                p {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-bottom: 0;
+                    .radio-input {
+                        float: right;
+                        margin-right: 0px;
+                        margin-left: 20px;
+                        &:checked {
+                            background-color: $hoverColor;
+                            border-color: $hoverColor;
+                        }
+                    }
+                }
+            }
+        }
+        .surprise-addon {
+            .surprise-addon-card {
+                border-radius: 10px;
+                box-shadow: 1px 1px 13px -2px rgb(0 0 0 / 12%);
+                padding: 10px;
+                position: relative;
+                img {
+                    height: 100px;
+                    width: 100px;
+                    object-fit: contain;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+                .show-qty {
+                    width: 100%;
+                    padding: 25px;
+                    background-color: coral;
+                    color: white;
+                    font-size: 25px;
+                    box-sizing: border-box;
+                }
+                .menu-card-meta {
+                    justify-content: space-between;
+                    .selling-card-cart {
+                        height: 1.5625rem;
+                        width: 1.5625rem;
+                        font-size: 1.5625rem;
+                        border-radius: 50%;
+                        border: 1px solid $hoverColor;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            border-top: 1px solid #98ce56;
+            .price-qty {
+                .price {
+                    margin-right: 20px;
                 }
             }
         }

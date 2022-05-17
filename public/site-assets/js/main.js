@@ -187,26 +187,6 @@ $(".btn-close").click(function () {
     $("#overlayCart").removeClass("active");
 });
 
-// function openNav() {
-//     document.getElementById("menu").style.width = "50%";
-//     document.getElementById("overlayVisit").style.display = "block";
-// }
-// function closeNav() {
-//     document.getElementById("menu").style.width = "0";
-//     document.getElementById("overlayVisit").style.display = "none";
-// }
-// $(window).resize(function() {
-//     if ($(window).width() > 992) {
-//         document.getElementById("menu").style.width = "100%";
-//     }
-// });
-// $(window).resize(function() {
-//     if ($(window).width() < 991) {
-//         document.getElementById("menu").style.width = "0";
-//     }
-// });
-
-
 function openFiler() {
     document.getElementById("mb-view").style.width = "100%";
     document.getElementById("overlaySide").style.display = "block";
@@ -217,19 +197,62 @@ function closeFiler() {
     document.getElementById("overlaySide").style.display = "none";
 }
 
-$(window).resize(function() {
+$(window).resize(function () {
     if ($(window).width() > 992) {
         document.getElementById("mb-view").style.width = "100%";
     }
 });
-$(window).resize(function() {
+$(window).resize(function () {
     if ($(window).width() < 991) {
         document.getElementById("mb-view").style.width = "0";
     }
 });
 
+// user login
+$("#header #loginBtn > a").on("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $("#loginBtn, .login-section").toggleClass("active");
+});
 
+// mobile menu
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".sidebar .nav-link").forEach(function (element) {
+        element.addEventListener("click", function (e) {
+            let nextEl = element.nextElementSibling;
+            let parentEl = element.parentElement;
 
+            if (nextEl) {
+                e.preventDefault();
+                let mycollapse = new bootstrap.Collapse(nextEl);
+
+                if (nextEl.classList.contains("show")) {
+                    mycollapse.hide();
+                } else {
+                    mycollapse.show();
+                    // find other submenus with class=show
+                    var opened_submenu =
+                        parentEl.parentElement.querySelector(".submenu.show");
+                    // if it exists, then close all of them
+                    if (opened_submenu) {
+                        new bootstrap.Collapse(opened_submenu);
+                    }
+                }
+            }
+        }); // addEventListener
+    }); // forEach
+});
+// DOMContentLoaded  end
+
+function showDiv() {
+    var x = document.getElementById("qty");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+    // document.getElementById('qty').style.display = "flex";
+}
 
 $(".home-main-carousel").owlCarousel({
     loop: true,

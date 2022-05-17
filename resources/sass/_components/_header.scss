@@ -144,7 +144,7 @@ ul.top-menu {
         font-size: 14px;
         padding: 6px 20px;
         border-radius: 3em;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: $white;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
         transition: all 0.3s ease 0s;
     }
@@ -369,7 +369,7 @@ ul.top-menu {
     > li {
         display: inline-block;
         list-style: none;
-        margin: 0 2%;
+        margin: 0 1%;
         .mega-menu {
             display: flex !important;
             position: absolute !important;

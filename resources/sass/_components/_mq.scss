@@ -115,3 +115,19 @@
         }
     }
 }
+
+
+@media (max-width:768px) {
+    .favourites-carousel {
+        .owl-nav {
+            button{
+                &.owl-next {
+                    right: 0;
+                }
+                &.owl-prev {
+                    left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<div id="bottom-menu" class="d-none d-xl-block">
+<div id="bottom-menu" class="d-none d-lg-block">
     <div class="container">
         <ul class="bottom-menu-nav">
             <li>
