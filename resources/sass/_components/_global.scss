@@ -130,40 +130,37 @@ ul {
 .custom-checkbox {
     display: block;
     position: relative;
-    padding-left: 2.1875rem;
+    padding-left: 1.5rem;
     margin-bottom: .75rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 700;
     color: #000;
     text-transform: capitalize;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     &:last-child {
         margin-bottom: 0;
     }   
     .checkmark {
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 0;
-        height: 1.5625rem;
-        width: 1.5625rem;
+        transform: translateY(-50%);
+        height: .9375rem;
+        width: .9375rem;
         background-color: $darkYellow;
         border: .0625rem solid $darkYellow;
-        border-radius: .3125rem;
         &::after {
             content: "";
             position: absolute;
             display: none;
-            left: .5625rem;
-            top: .3125rem;
+            left: 50%;
+            top: 50%;
             width: .3125rem;
             height: .625rem;
             border: solid #fff;
             border-width: 0 .1875rem .1875rem 0;
-            transform: rotate(45deg);
+            transform: translate(-50%,-50%) rotate(45deg);
         }
     }
     input {
@@ -340,15 +337,14 @@ ul {
 
 .quantity {
     display: inline-block;
-    background: #fff;
-    border: 0.125rem solid $darkYellow;
+    background: #f1f1f1;
     border-radius: 1.875rem;
     input[type="number"] {
-        width: 4.375rem;
+        width: auto;
         padding: 0;
         text-transform: uppercase;
         text-align: center;
-        color: $green;
+        color: #000;
         background: none;
         outline: none;
         pointer-events: none;
@@ -361,6 +357,7 @@ ul {
     span {
         &.spinner {
             height: 2.5rem;
+            line-height: 2.5rem;
             user-select: none;
             -ms-user-select: none;
             -moz-user-select: none;
@@ -379,17 +376,15 @@ ul {
                 border-radius: 0.125rem 0 0 0.125rem;
                 cursor: pointer;
                 transition: 0.1s linear;
-                color: #03a9f4;
+                color: #000;
             }
             > .sub {
-                border-right: 0.125rem $darkYellow solid;
                 &:hover {
                     color: $darkYellow;
                 }
             }
             > .add {
                 top: 0;
-                border-left: 0.125rem $darkYellow solid;
                 border-radius: 0 0.125rem 0.125rem 0;
                 &:hover {
                     color: $darkYellow;
