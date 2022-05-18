@@ -14,7 +14,7 @@
                 <span class="price">Rs. 1000</span>
             </div>
             <div class="food-plus">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="las la-plus"></i>
                 </a>
             </div>
@@ -34,7 +34,7 @@
                 <span class="price">Rs. 1000</span>
             </div>
             <div class="food-plus">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="las la-plus"></i>
                 </a>
             </div>
@@ -54,7 +54,7 @@
                 <span class="price">Rs. 1000</span>
             </div>
             <div class="food-plus">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="las la-plus"></i>
                 </a>
             </div>
@@ -74,7 +74,7 @@
                 <span class="price">Rs. 1000</span>
             </div>
             <div class="food-plus">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <i class="las la-plus"></i>
                 </a>
             </div>

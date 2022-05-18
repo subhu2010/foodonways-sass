@@ -30,7 +30,6 @@
             </div>
         </div>
 
-        <!-- beverage menu section -->
         <div class="fix-menu">
             <div class="beverage-section menu-section py-3">
                 <div class="container">
@@ -108,6 +107,19 @@
                                     </div>
                                     <div class="menu-card-title">
                                         <h4>Mutton Roast</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="menu-card-one">
+                                <a href="#">
+                                    <div class="menu-card-img">
+                                        <img src="{{ asset('site-assets/images/menu/10.png') }}" class=""
+                                            alt="food on ways">
+                                    </div>
+                                    <div class="menu-card-title">
+                                        <h4>Sizzler</h4>
                                     </div>
                                 </a>
                             </div>
@@ -417,7 +429,6 @@
             </div>
         </div>
 
-        <!-- add section -->
         <div class="addvertise-section pa-tb">
             <div class="container">
                 <div class="row">
@@ -727,7 +738,6 @@
             </div>
         </div>
 
-        <!-- add section -->
         <div class="addvertise-section pa-tb">
             <div class="container">
                 <div class="row">
@@ -751,12 +761,12 @@
 
 
     <!-- our strength -->
-    <div class="strength-section custom-bg">
+    <div class="strength-section custom-bg pa-tb">
         <div class="container">
             <div class="section-title">
                 <h3>our strength</h3>
             </div>
-            <div class="row g-0 gx-5 gy-4">
+            <div class="row g-0 g-4">
                 <div class="col-xxl-2 col-lg-2 col-md-4 col-6">
                     <div class="menu-card-one">
                         <a href="#">
@@ -956,7 +966,7 @@
         </div>
     </div>
 
-    <div class="home-policies ma-t" style="background: url('../public/images/bg.png')">
+    <div class="home-policies" style="background: url('../public/images/bg.png')">
         <div class="offer-section" style="z-index: 1;position: relative;">
             <div class="container">
                 <div class="row">

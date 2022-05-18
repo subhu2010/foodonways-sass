@@ -29,6 +29,10 @@ Route::get('item-detail', function () {
     return view('site.pages.items-detail');
 });
 
+Route::get('old-item-detail', function () {
+    return view('site.pages.old-items-detail');
+});
+
 Route::get('checkout-order', function () {
     return view('site.pages.checkout-order');
 });

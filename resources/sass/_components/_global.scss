@@ -306,48 +306,54 @@ ul {
 /*menu card end*/
 
 // owl nav
-.favourites-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    button {
-        height: 2.1875rem;
-        width: 2.1875rem;
-        border-radius: 50% !important;
-        background: #efc4ef !important;
+.menu-carousel,
+.favourites-carousel {
+    .owl-nav {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        margin: 0 !important;
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f30a";
-            display: inline-block;
-            vertical-align: middle;
-            font-weight: 900;
-            font-size: 1.75rem;
-            color: $green;
+        width: 100%;
+        button {
+            height: 2.1875rem;
+            width: 2.1875rem;
+            border-radius: 50% !important;
+            background: #efc4ef !important;
             position: absolute;
             top: 50%;
-            right: -0.3125rem;
             transform: translateY(-50%);
-        }
-        &:hover {
-            background: $darkYellow !important;
+            margin: 0 !important;
             &::before {
-                color: $green !important;
+                font-family: "Font Awesome 5 Free";
+                content: "\f30a";
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 900;
+                font-size: 1.75rem;
+                color: $green;
+                position: absolute;
+                top: 50%;
+                right: -0.3125rem;
+                transform: translateY(-50%);
             }
-        }
-        &.owl-prev {
-            left: -2.8125rem;
-        }
-        &.owl-next {
-            right: -2.8125rem;
-            &::before {
-                transform: rotate(180deg) translateY(50%);
-                left: auto;
-                right: 1.0625rem;
+            &:hover {
+                background: $darkYellow !important;
+                &::before {
+                    color: $green !important;
+                }
+            }
+            &.owl-prev {
+                left: -2.8125rem;
+            }
+            &.owl-next {
+                right: -2.8125rem;
+                &::before {
+                    transform: rotate(180deg) translateY(50%);
+                    left: auto;
+                    right: 1.0625rem;
+                }
+            }
+            span {
+                display: none;
             }
         }
     }

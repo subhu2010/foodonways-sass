@@ -18,95 +18,259 @@
     </div>
 </section>
 
-<!-- product detail -->
-<div class="mt-0">
-    <div class="container">
-        <div class="product-content">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="xzoom-container">
-                        <div class="product-img">
-                            <img class="xzoom" id="xzoom-default" src="{{ asset('site-assets/images/1.jpg') }}"
-                                xoriginal="{{ asset('site-assets/images/1.jpg') }}" />
-                        </div>
-                        <div class="xzoom-thumbs">
-                            <a href="{{ asset('site-assets/images/1.jpg') }}"><img class="xzoom-gallery"
-                                    src="{{ asset('site-assets/images/1.jpg') }}"
-                                    xpreview="{{ asset('site-assets/images/1.jpg') }}"> </a>
-                            <a href="{{ asset('site-assets/images/2.jpg') }}"><img class="xzoom-gallery"
-                                    src="{{ asset('site-assets/images/2.jpg') }}"> </a>
-                            <a href="{{ asset('site-assets/images/3.jpg') }}"><img class="xzoom-gallery"
-                                    src="{{ asset('site-assets/images/3.jpg') }}"> </a>
-                            <a href="{{ asset('site-assets/images/4.jpg') }}"><img class="xzoom-gallery"
-                                    src="{{ asset('site-assets/images/4.jpg') }}"> </a>
-                        </div>
+<div class="container">
+    <div class="items-details mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="owl-carousel owl-theme quick-view-slide">
+                    <div class="item">
+                        <img src="{{ asset('site-assets/images/item/1.1.jpg') }}" alt="" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site-assets/images/item/1.2.jpg') }}" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="product-dtl">
-                        <div class="product-dtl-head">
-                            <h4 class="title">omlet</h4>
-                            <span class="subtitle">spicy hot</span>
-                            <div class="icon-star">
-                                <span class="las la-star checked"></span>
-                                <span class="las la-star checked"></span>
-                                <span class="las la-star checked"></span>
-                                <span class="las la-star"></span>
-                                <span class="las la-star"></span>
-                            </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="product-summary">
+                    <h1 class="heading-title">Bacon Cheeseburger</h1>
+                    <div class="short-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id ratione ipsum.
+                            Similique ducimus</p>
+                        <ul class="item-weight-holder">
+                            <li>
+                                <span class="item-weight">
+                                    Serving size:
+                                    <span class="item-weight-values">
+                                        290 g </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nutrition-summary">
+                        <ul class="nutrition-list">
+                            <li class="nutrition-energy">
+                                <span class="nutrition-list-label">Energy</span>
+                                430 Cal
+                                <span class="nutrition-list-label">DI*</span>
+                                22%
+                            </li>
+                            <li class="nutrition-energy">
+                                <span class="nutrition-list-label">PROTEIN</span>
+                                20 g
+                                <span class="nutrition-list-label">DI*</span>
+                                50%
+                            </li>
+                            <li class="nutrition-energy">
+                                <span class="nutrition-list-label">FAT</span>
+                                10 g
+                                <span class="nutrition-list-label">DI*</span>
+                                15%
+                            </li>
+                            <li class="nutrition-energy">
+                                <span class="nutrition-list-label">SAT FAT</span>
+                                2 g
+                                <span class="nutrition-list-label">DI*</span>
+                                10%
+                            </li>
+                            <li class="nutrition-energy">
+                                <span class="nutrition-list-label">CARBS</span>
+                                10 Cal
+                                <span class="nutrition-list-label">DI*</span>
+                                3%
+                            </li>
+                        </ul>
+                        <span class="nutrition-di">*DI: Recommended Daily Intake based on 2000 calories
+                            diet</span>
+                        <span class="nutrition-allergens fw-600">Allergens: Milk, Eggs, Soy, Glutten</span>
+                    </div>
+                    <div class="icon-star">
+                        <span class="las la-star checked"></span>
+                        <span class="las la-star checked"></span>
+                        <span class="las la-star checked"></span>
+                        <span class="las la-star"></span>
+                        <span class="las la-star"></span>
+                    </div>
+                    <p class="price my-4">
+                        Rs 800
+                    </p>
+                    <div class="product-addon">
+                        <h3 class="addon-name">*NEW: Negative Add-ons </h3>
+                        <div class="addon-description">
+                            <p>Helpful when you want to remove ingredients and decrease the product price.</p>
                         </div>
-                        <div class="product-dtl-body">
-                            <p>Text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                to make a type specimen book. It has survived not only five centurie</p>
-                            <p>Text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                to make a type specimen book. It has survived not only five centurie</p>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="quantity">
-                                        <input type="number" min="1" max="100" value="1" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="price-bg">
-                                        <span>Price Rs 897</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-size mt-4">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="product-size-card">
-                                            <span>Size</span>
-                                            <h4>medium</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="product-size-card">
-                                            <span>delivery</span>
-                                            <h4>30 min</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="product-size-card border-0">
-                                            <span>contain</span>
-                                            <h4>Gluten</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="offset-lg-3 col-lg-6">
-                                    <a href="cart.php" class="btn btn-one d-block mb-3" data-bs-toggle="modal"
-                                        data-bs-target="#checkout">Add to cart</a>
-                                </div>
-                            </div>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="1" name="1" value="">
+                            <label class="show-total" for="1" class="fw-700"> NO ONION (–Rs 50)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="2" name="2" value="">
+                            <label class="show-total" for="2" class="fw-700">NO MUSTARD (–Rs 40)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="3" name="3" value="">
+                            <label class="show-total" for="3" class="fw-700"> NO CHEESE (-Rs 100)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="4" name="4" value="">
+                            <label class="show-total" for="4" class="fw-700"> NO JALAPENO (–Rs 40)</label><br>
+                        </p>
+                    </div>
+                    <div class="product-addon">
+                        <h3 class="addon-name">EXTRA TOPPINGS</h3>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="5" name="5" value="">
+                            <label class="show-total" for="5" class="fw-700">EXTRA CHEDDAR (Rs 50)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="6" name="6" value="">
+                            <label class="show-total" for="6" class="fw-700">SMOKED CHEESE (Rs 40)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="7" name="7" value="">
+                            <label class="show-total" for="7" class="fw-700"> FRIED ONION (Rs 100)</label><br>
+                        </p>
+                        <p class="checkbox">
+                            <input type="checkbox" class="show-total" id="8" name="8" value="">
+                            <label class="show-total" for="8" class="fw-700"> SAUTEED ‘SHROOMS (Rs
+                                40)</label><br>
+                        </p>
+                    </div>
+                    <div class="addon-total">
+                        <dl class="product-addon-totals">
+                            <dt>Options total:</dt>
+                            <dd><strong><span class="amount">$1.00</span></strong></dd>
+                            <dt>Sub total:</dt>
+                            <dd><strong><span class="amount">$12.99</span></strong></dd>
+                        </dl>
+                    </div>
+                    <div class="addon-order">
+                        <div class="quantity">
+                            <input type="number" min="1" max="100" value="1" />
                         </div>
+                        <button type="submit" class="btn cart-btn">Order</button>
+                        <div class="addon-wishlist">
+                            <i class="lar la-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-meta">
+                        <span class="posted-in">Category:</span><a href="javascrip:void(0)" rel="tag">Burgers</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<section id="overlayCart" class="overlay-cart">
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6">
+                <div class="overlay-cart-content">
+                    <div class="product-section-list clearfix">
+                        <div class="change-branch delivery-info">
+                            <span class="estimated-time">40 min.</span>
+                            <span>
+                                <strong>Delivery from:</strong>
+                                Worldwide
+                            </span>
+                            <span>
+                                <strong>To:</strong>
+                                <span class="full-address">1 Bhattarai Marg, 44600, Kathmandu, Nepal</span>
+                                <a href="javascript:" class="button"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-section-list">
+                        <ul class="product-list-widget">
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/3.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">1 * Rs 500</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/4.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">2 * Rs 323</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/3.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">1 * Rs 500</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/4.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">2 * Rs 323</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/3.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">1 * Rs 500</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="clearfix">
+                                    <img src="{{ asset('site-assets/images/item/4.jpg') }}" alt="" class="img-fluid">
+                                    <div class="popular-product">
+                                        <span class="popular-product-title">
+                                            Pizza Amatriciana
+                                            <i class="las la-trash-alt"></i>
+                                        </span>
+                                        <span class="popular-product-price">2 * Rs 323</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="product-section-total">
+                            <strong>Subtotal : </strong>
+                            <strong>Rs 1412</strong>
+                        </div>
+                        <div class="cart-buttons clearfix">
+                            <a href="javascript:(0)" class="btn">view cart</a>
+                            <a href="javascript:(0)" class="btn">chechout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- product detail tab -->
 <div class="custom-bg">
@@ -130,14 +294,8 @@
                             aria-selected="false">Detail History</button>
                     </li>
                 </ul>
-                <form>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="las la-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search food items">
-                    </div>
-                </form>
             </div>
-            <div class="tab-content my-3" id="pills-tabContent">
+            <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-other-product" role="tabpanel"
                     aria-labelledby="pills-other-product-tab">
                     @include ('site.includes.add-other-product')
@@ -222,183 +380,5 @@
     </div>
 </div>
 
-
-<!-- Modal -->
-<div class="modal fade modal-checkout" id="checkout" tabindex="-1" aria-labelledby="checkoutLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header p-0">
-                <h5 class="modal-title" id="checkoutLabel"><i class="las la-shopping-cart"></i> Your Order</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-0">
-                <div class="list-item">
-                    <div class="list-item-card flex-center">
-                        <div class="item-name">
-                            <h5>Chicken Biryani</h5>
-                            <div class="item-meta">
-                                <span class="add-note"><i class="las la-clipboard"></i> Add Note</span>
-                                <span><i class="las la-trash"></i> Delete</span>
-                            </div>
-                        </div>
-                        <div class="price">
-                            Rs. 800
-                        </div>
-                    </div>
-                    <div class="add-textarea">
-                        <textarea rows="5" cols="40" class="form-control"></textarea>
-                    </div>
-                    <div class="list-item-card flex-center">
-                        <div class="item-name">
-                            <h5>Chicken Biryani</h5>
-                            <div class="item-meta">
-                                <span class="add-note"><i class="las la-clipboard"></i> Add Note</span>
-                                <span><i class="las la-trash"></i> Delete</span>
-                            </div>
-                        </div>
-                        <div class="price">
-                            Rs. 800
-                        </div>
-                    </div>
-                    <div class="add-textarea">
-                        <textarea rows="5" cols="40" class="form-control"></textarea>
-                    </div>
-                </div>
-                <div class="modal-checkout-subtotal">
-                    <div class="list-item-card flex-center">
-                        <div class="item-name">
-                            <h5 class="mb-0">Resturant Subtotal</h5>
-                        </div>
-                        <div class="price">
-                            Rs. 1300
-                        </div>
-                    </div>
-                    <div class="list-item-card flex-center">
-                        <div class="item-name">
-                            <h5 class="mb-0">Delivery Charge</h5>
-                        </div>
-                        <div class="price">
-                            Rs. 100
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-checkout-total">
-                    <div class="list-item-card flex-center">
-                        <div class="item-name">
-                            <h5 class="mb-0">Resturant Total</h5>
-                        </div>
-                        <div class="price">
-                            Rs. 1400
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer px-0 pb-0">
-                <a href="{{url('checkout-order')}}" class="btn btn-one">proceed to checkout</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Surprise food Modal -->
-<div class="modal fade modal-checkout" id="supriseCheckout" tabindex="-1" aria-labelledby="supriseCheckoutLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body px-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <div class="surprise-food-cart d-flex align-items-center justify-content-around">
-                    <img src="images/combo.png" class="img-fluid" alt="food on ways">
-                    <div class="surprise-food-title">
-                        <h4 class="fw-700">Combo Of The Month</h4>
-                        <p>French fries + Chicken Sizzler + Burger + momos</p>
-                    </div>
-                </div>
-                <h4 class="fw-700">Wanna Make it more Special</h4>
-                <div class="special-list-item">
-                    <div class="form-check">
-                        <label class="form-check-label radio-label" for="exampleRadios1">
-                            Flower
-                        </label>
-                        <p class="price">
-                            <input class="form-check-input radio-input" type="radio" name="exampleRadios"
-                                id="exampleRadios1" value="option1">
-                            Rs. 895
-                        </p>
-                    </div>
-                </div>
-                <div class="special-list-item">
-                    <div class="form-check">
-                        <label class="form-check-label radio-label" for="exampleRadios1">
-                            Printed Card
-                        </label>
-                        <p class="price">
-                            <input class="form-check-input radio-input" type="radio" name="exampleRadios"
-                                id="exampleRadios1" value="option1">
-                            Rs. 895
-                        </p>
-                    </div>
-                </div>
-                <div class="special-list-item">
-                    <div class="form-check">
-                        <label class="form-check-label radio-label" for="exampleRadios1">
-                            Chocolates
-                        </label>
-                        <p class="price">
-                            <input class="form-check-input radio-input" type="radio" name="exampleRadios"
-                                id="exampleRadios1" value="option1">
-                            Rs. 895
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer justify-content-between px-0 pb-0">
-                <div class="price-qty d-flex align-items-center">
-                    <span class="price">
-                        Rs. 1500
-                    </span>
-                    <div class="quantity">
-                        <input type="number" min="1" max="100" value="1" />
-                    </div>
-                </div>
-                <a href="#" class="btn btn-one">add to cart</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-(function($) {
-    $.fn.spinner = function() {
-        this.each(function() {
-            var el = $(this);
-
-            // add elements
-            el.wrap('<span class="spinner"></span>');
-            el.before('<span class="sub">-</span>');
-            el.after('<span class="add">+</span>');
-
-            // substract
-            el.parent().on('click', '.sub', function() {
-                if (el.val() > parseInt(el.attr('min')))
-                    el.val(function(i, oldval) {
-                        return --oldval;
-                    });
-            });
-
-            // increment
-            el.parent().on('click', '.add', function() {
-                if (el.val() < parseInt(el.attr('max')))
-                    el.val(function(i, oldval) {
-                        return ++oldval;
-                    });
-            });
-        });
-    };
-})(jQuery);
-
-$('input[type=number]').spinner();
-</script>
 
 @endsection
